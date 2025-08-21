@@ -4,16 +4,21 @@
     <title>Universo Lorcana</title>
     <link rel="stylesheet" href="./css/pico.min.css">
     <style>
-      body {
+      html, body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        min-height: 100vh;   /* asegura ocupar toda la altura de la pantalla */
         background-color: #FFF6BC;
         color: #2F316E;
-        text-align: center;
-        padding-top: 2rem;
       }
       .logo {
-        max-width: 450px;
-        margin: 0 auto 1rem;
         display: block;
+        margin: 0 auto 1rem;
+        width: 100%;       /* ocupa todo el ancho disponible */
+        max-width: 450px;  /* nunca más grande que 450px */
+        min-width: 180px;  /* asegura un mínimo en pantallas muy pequeñas */
+        height: auto;      /* mantiene la proporción */
       }
       h1 {
         font-size: 1.8rem;
